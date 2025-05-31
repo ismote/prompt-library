@@ -1,0 +1,68 @@
+<context>
+# Overview  
+A Prompt Library web application that allows users to create, organize, and manage a collection of prompts. The platform is designed for individuals and teams who want to store, categorize, and share prompts for AI tools, writing, coding, or other creative uses. The app is accessible from anywhere and can be shared with third parties.
+
+# Core Features  
+- **Prompt Categories**: Users can create and manage different categories to organize prompts logically (e.g., Writing, Coding, Marketing).
+- **Prompt CRUD**: Users can add new prompts, edit existing ones, and delete prompts as needed.
+- **Prompt Sharing**: Users can share their prompt library or specific categories/prompts with others via a public link or invite.
+- **Web Access**: The app is accessible via any modern web browser, supporting both desktop and mobile devices.
+- **Authentication (Optional for MVP)**: Optionally, users can create accounts to save their libraries securely.
+
+# User Experience  
+- **User Personas**: 
+  - AI enthusiasts
+  - Writers
+  - Developers
+  - Teams collaborating on prompt engineering
+- **Key User Flows**:
+  - Log in or access the app
+  - Create a new category
+  - Add prompts to a category
+  - Edit or delete prompts
+  - Share a category or prompt
+- **UI/UX Considerations**:
+  - Clean, intuitive interface
+  - Easy navigation between categories and prompts
+  - Responsive design for mobile and desktop
+</context>
+<PRD>
+# Technical Architecture  
+- **Frontend**: Modern JavaScript framework (e.g., React, Vue, or Svelte)
+- **Backend**: Node.js/Express or serverless functions (for prompt storage and sharing)
+- **Database**: Cloud-based (e.g., MongoDB Atlas, Firebase, or Supabase)
+- **APIs**: RESTful or GraphQL for prompt/category CRUD and sharing
+- **Authentication**: Optional for MVP (can use Auth0, Firebase Auth, or similar)
+- **Hosting**: Vercel, Netlify, or similar for global access
+
+# Development Roadmap  
+- **MVP Requirements**:
+  - Prompt category creation and management
+  - Prompt CRUD (create, read, update, delete)
+  - Public sharing of categories/prompts via link
+  - Responsive web UI
+  - (Optional) Basic authentication for private libraries
+- **Future Enhancements**:
+  - User accounts and authentication
+  - Collaboration (multiple users editing a library)
+  - Advanced search and filtering
+  - Tagging and favoriting prompts
+  - Analytics on prompt usage
+
+# Logical Dependency Chain
+- Set up project structure and hosting
+- Implement database and backend API for prompt/category CRUD
+- Build frontend UI for categories and prompts
+- Add sharing functionality
+- (Optional) Add authentication
+- Polish UI/UX and test for mobile/desktop
+
+# Risks and Mitigations  
+- **Technical challenges**: Ensuring real-time updates and sharing; mitigate by starting with simple CRUD and public links
+- **MVP scope**: Focus on core CRUD and sharing for first release
+- **Resource constraints**: Use managed services (e.g., Vercel, Firebase) to reduce ops overhead
+
+# Appendix  
+- Research: Review existing prompt management tools for inspiration
+- Technical specs: Use modern, widely supported frameworks and cloud services
+</PRD> 
